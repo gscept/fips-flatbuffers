@@ -31,7 +31,7 @@ macro(flatc)
         set(output ${abs_output_folder}/${out_header})
         
         add_custom_command(OUTPUT ${output}
-                PRE_BUILD COMMAND ${FLATC} -c --gen-object-api --gen-compare --scoped-enums --gen-mutable --cpp-str-flex-ctor --cpp-str-type Util::String --filename-suffix "" -o "${abs_output_folder}" "${f_abs}" 
+                PRE_BUILD COMMAND ${FLATC} -c --gen-object-api --scoped-enums --gen-mutable --cpp-str-flex-ctor --cpp-str-type Util::String --filename-suffix "" -o "${abs_output_folder}" "${f_abs}" 
                 MAIN_DEPENDENCY ${f_abs}
                 DEPENDS ${FLATC}
                 WORKING_DIRECTORY ${FIPS_PROJECT_DIR}

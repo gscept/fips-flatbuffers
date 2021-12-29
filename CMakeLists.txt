@@ -8,6 +8,8 @@ if (NOT FIPS_IMPORT)
     include("${FIPS_ROOT_DIR}/cmake/fips.cmake")
     fips_setup()
     fips_project(fips-flatbuffers)
+    fips_include_directories(flatbuffers/include)
+    fips_add_subdirectory(flatc)
 endif()
 
 fips_begin_lib(flatbuffers)
