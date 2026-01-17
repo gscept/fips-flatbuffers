@@ -4,40 +4,64 @@ fips_begin_app(flatc cmdline)
 		../flatbuffers/include/flatbuffers/flatbuffers.h
 		../flatbuffers/include/flatbuffers/idl.h
 		../flatbuffers/include/flatbuffers/util.h
-		../flatbuffers/src/idl_gen_cpp.cpp
-		../flatbuffers/src/idl_gen_csharp.cpp
-		../flatbuffers/src/idl_gen_dart.cpp
-		../flatbuffers/src/idl_gen_kotlin.cpp
-		../flatbuffers/src/idl_gen_go.cpp
-		../flatbuffers/src/idl_gen_java.cpp
-		../flatbuffers/src/idl_gen_ts.cpp
-		../flatbuffers/src/idl_gen_php.cpp
-		../flatbuffers/src/idl_gen_python.cpp
-		../flatbuffers/src/idl_gen_lobster.cpp
-		../flatbuffers/src/idl_gen_lua.cpp
-		../flatbuffers/src/idl_gen_rust.cpp
-		../flatbuffers/src/idl_gen_fbs.cpp
-		../flatbuffers/src/idl_gen_grpc.cpp
-		../flatbuffers/src/idl_gen_json_schema.cpp
-		../flatbuffers/src/idl_gen_swift.cpp
-		../flatbuffers/src/idl_parser.cpp
-		../flatbuffers/src/idl_gen_cpp.cpp
-		../flatbuffers/src/idl_gen_json_schema.cpp
-		../flatbuffers/src/idl_gen_go.cpp
-		../flatbuffers/src/idl_gen_rust.cpp
-		../flatbuffers/src/idl_gen_text.cpp
-		../flatbuffers/src/idl_gen_fbs.cpp
-		../flatbuffers/src/flatc.cpp
-		../flatbuffers/src/flatc_main.cpp
-		../flatbuffers/src/util.cpp
-		../flatbuffers/src/reflection.cpp
-		../flatbuffers/src/bfbs_gen_lua.cpp
-		../flatbuffers/src/code_generators.cpp
+		../flatbuffers/include/codegen/python.cc
 		../flatbuffers/grpc/src/compiler/ts_generator.cc
 		../flatbuffers/grpc/src/compiler/cpp_generator.cc
 		../flatbuffers/grpc/src/compiler/go_generator.cc
 		../flatbuffers/grpc/src/compiler/java_generator.cc
 		../flatbuffers/grpc/src/compiler/python_generator.cc
 		../flatbuffers/grpc/src/compiler/swift_generator.cc
+	 	../flatbuffers/src/bfbs_gen.h
+        ../flatbuffers/src/bfbs_gen_lua.cpp
+        ../flatbuffers/src/bfbs_gen_lua.h
+        ../flatbuffers/src/bfbs_gen_nim.cpp
+        ../flatbuffers/src/bfbs_gen_nim.h
+        ../flatbuffers/src/bfbs_namer.h
+        ../flatbuffers/src/file_manager.cpp
+        ../flatbuffers/src/file_name_manager.cpp
+        ../flatbuffers/src/flatc_main.cpp
+		../flatbuffers/src/reflection.cpp
+		../flatbuffers/src/flatc.cpp
+		../flatbuffers/src/code_generators.cpp
+		../flatbuffers/src/annotated_binary_text_gen.cpp
+		../flatbuffers/src/binary_annotator.cpp
+        ../flatbuffers/src/idl_gen_binary.cpp
+        ../flatbuffers/src/idl_gen_binary.h
+		../flatbuffers/src/idl_gen_fbs.cpp
+		../flatbuffers/src/idl_gen_fbs.h
+        ../flatbuffers/src/idl_gen_cpp.cpp
+        ../flatbuffers/src/idl_gen_cpp.h
+        ../flatbuffers/src/idl_gen_csharp.cpp
+        ../flatbuffers/src/idl_gen_csharp.h
+        ../flatbuffers/src/idl_gen_dart.cpp
+        ../flatbuffers/src/idl_gen_dart.h
+        ../flatbuffers/src/idl_gen_go.cpp
+        ../flatbuffers/src/idl_gen_go.h
+        ../flatbuffers/src/idl_gen_grpc.cpp
+        ../flatbuffers/src/idl_gen_java.cpp
+        ../flatbuffers/src/idl_gen_java.h
+        ../flatbuffers/src/idl_gen_json_schema.cpp
+        ../flatbuffers/src/idl_gen_json_schema.h
+        ../flatbuffers/src/idl_gen_kotlin.cpp
+        ../flatbuffers/src/idl_gen_kotlin.h
+        ../flatbuffers/src/idl_gen_kotlin_kmp.cpp
+        ../flatbuffers/src/idl_gen_lobster.cpp
+        ../flatbuffers/src/idl_gen_lobster.h
+        ../flatbuffers/src/idl_gen_php.cpp
+        ../flatbuffers/src/idl_gen_php.h
+        ../flatbuffers/src/idl_gen_python.cpp
+        ../flatbuffers/src/idl_gen_python.h
+        ../flatbuffers/src/idl_gen_rust.cpp
+        ../flatbuffers/src/idl_gen_rust.h
+        ../flatbuffers/src/idl_gen_swift.cpp
+        ../flatbuffers/src/idl_gen_swift.h
+        ../flatbuffers/src/idl_gen_text.cpp
+        ../flatbuffers/src/idl_gen_text.h
+        ../flatbuffers/src/idl_gen_ts.cpp
+        ../flatbuffers/src/idl_gen_ts.h
+        ../flatbuffers/src/idl_namer.h
+		../flatbuffers/src/idl_parser.cpp
+        ../flatbuffers/src/namer.h
+        ../flatbuffers/src/util.cpp
 	)
 fips_end_app()

@@ -3,7 +3,7 @@
 #
 ---
 exports:
-    header-dirs: [ flatbuffers/include ]
+    header-dirs: [ 'flatbuffers/include', 'flatbuffers/src', 'flatbuffers']
     modules :
         flatbuffers: .
 
